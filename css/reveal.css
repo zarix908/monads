@@ -1638,3 +1638,7 @@ body {
 .reveal section .maxImg {
   max-height: 300px;
 }
+
+.reveal section .disScroll {
+  overflow-x: hidden;
+}

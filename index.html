@@ -116,15 +116,13 @@ print(8 / number)</code></pre>
 <span class="red">ValueError</span>: cannot parse number
 								</pre>
 							</li>
-							<li>
-								<pre><code class="hljs">n = read()
-if isNumber(n):
-	number = stringToNumber(n)
-	print(number + 1)
-else:
-	print("not a number")</code></pre>
-							</li>
 						</ol>
+						<pre><code class="hljs">try:
+	n = read()
+	number = stringToNumber(n)	
+	print(8 / number)
+except:
+	print("not a number")</code></pre>
 					</section>
 					<section>
 						<ol>
@@ -137,34 +135,121 @@ else:
 <span class="red">ValueError</span>: cannot parse number
 								</pre>
 							</li>
+						</ol>
+						<pre><code class="hljs">try:
+	n = read()
+	number = stringToNumber(n)	
+	print(8 / number)
+except ValueError as e:
+	print("not a number")
+except ZeroDivisionError as e:
+	print("cannot divide by zero")</code></pre>
+					</section>
+					<section>
+						<ol start="2">
 							<li>
-								<pre><code class="hljs">n = read()
+								<pre><code class="hljs disScroll">n = read()
 if isNumber(n):
-	number = stringToNumber(n)
-	print(number + 1)
+	number = stringToNumber(n)	
+	print(8 / number)
 else:
 	print("not a number")</code></pre>
 							</li>
+						</ol>
+					</section>
+					<section>
+						<ol start="2">
 							<li>
-								<pre><code class="hljs">n = read()
-answer = stringToNumber(n)
-if answer.error:
-	print("not a number")
+								<pre><code class="hljs disScroll">n = read()
+if isNumber(n):
+	number = stringToNumber(n)	
+	print(8 / number)
 else:
-	print(answer.number + 1)</code></pre>
+	print("not a number")</code></pre>
+							</li>
+						</ol>
+						<pre><code class="hljs disScroll">n = read()
+if isNumber(n):
+	number = stringToNumber(n)	
+
+	if number == 0:
+		print("cannot divide by zero")
+	else:
+		print(8 / number)
+else:
+	print("not a number")</code></pre>
+					</section>
+					<section>
+						<ol start="3">
+							<li>
+								<pre><code class="hljs disScroll">n = read()
+answer = stringToNumber(n)	
+if answer.error:			
+	print("not a number")	
+else:				
+	print(8 / answer.number)</code></pre>
 							</li>
 						</ol>
 					</section>
+					<section>
+						<ol start="3">
+							<li>
+								<pre><code class="hljs disScroll">n = read()
+answer = stringToNumber(n)			
+if answer.error:				
+	print("not a number")	
+else:				
+	print(8 / answer.number)</code></pre>
+							</li>
+						</ol>
+						<pre><code class="hljs">n = read()
+answer = stringToNumber(n)
+if answer.error:
+	print("not a number")
+	exit()
+answer = 8 / answer.number
+if answer.error:
+	print("cannot divide by zero")
+	exit()
+print(answer.number)</code></pre>
+					</section>
 				</section>
 				<section>
-					<section>
-						<img class="inboxImg" src="./images/03_inbox.png">
-					</section>
 					<section>
 						<img class="inboxImg" src="./images/03_inbox2.png">
 					</section>
 					<section>
 						<img class="inboxImg" src="./images/03_inbox3.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox4.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox5.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox6.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox2.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox7.png">
+					</section>
+					<section>
+						<ol>
+							<li><img class="inboxImg" src="./images/03_inbox6.png"></li>
+							<li><img class="inboxImg" src="./images/03_inbox8.png"></li>
+						</ol>
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox9.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox10.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox7.png">
 					</section>
 				</section>
 			</div>
