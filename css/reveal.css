@@ -1604,3 +1604,33 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.s1_leftUp {
+  position: relative;
+  top: -15px;
+  left: -15px;
+}
+
+.s1_rightDown {
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.reveal section .inboxImg {
+  border: none;
+  box-shadow: none;
+  background: none;
+}

@@ -289,7 +289,9 @@
 			hideCursorTime: 5000,
 
 			// Script dependencies to load
-			dependencies: []
+			dependencies: [
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
 
 		},
 

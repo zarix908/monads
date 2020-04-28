@@ -25,8 +25,138 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Монады, что может быть проще?</h2>
+				</section>
+				<section>
+					<img class="s1_leftUp" src="./images/01_cat.jpg">
+					<img class="s1_rightDown" src="./images/01_cat2.jpg">
+				</section>
+				<section>
+					<section>
+						<h4>Планы на недалекое будущее</h4>
+					</section>
+					<section>
+						<h4>Планы на недалекое будущее</h4>
+						<ol>
+							<li>Подходы к обработке ошибок и их проблемы</li>
+						</ol>
+					</section>
+					<section>
+						<h4>Планы на недалекое будущее</h4>
+						<ol>
+							<li>Подходы к обработке ошибок и их проблемы</li>
+							<li>Оно работает? А как оно работает?</li>
+						</ol>
+					</section>
+					<section>
+						<h4>Планы на недалекое будущее</h4>
+						<ol>
+							<li>Подходы к обработке ошибок и их проблемы</li>
+							<li>Оно работает? А как оно работает?</li>
+							<li>Чем мне помогут монады?</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+						<pre><code class="hljs">stringToNumber("4") = 4</code></pre>
+					</section>
+					<section>
+						<pre><code class="hljs">n = read()
+number = stringToNumber(n)
+print(number + 1)</code></pre>
+						<pre><span class="red">user:</span><span class="blue">console$</span> 4
+5
+<span class="red">user:</span><span class="blue">console$</span></pre>
+					</section>
+					<section>
+						<pre><code class="hljs">n = read()
+number = stringToNumber(n)
+print(number + 1)</code></pre>
+						<span>problems?</span>
+					</section>
+					<section>
+						<pre><code class="hljs">stringToNumber("dfjkls") = // ???</code></pre>
+						<img src="./images/02_wtf.png">
+					</section>
+				</section>
+				<section>
+					<section>
+						<ol>
+							<li>
+								<pre>
+<span class="red">ValueError</span>	Traceback (most recent call last)
+<span class="green">&lt;ipython-input-4-cc668a130244&gt;</span> in &lt;module&gt;()
+<span class="green">----> 1 raise</span> ValueError('cannot parse number')
+
+<span class="red">ValueError</span>: cannot parse number
+								</pre>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol>
+							<li>
+								<pre>
+<span class="red">ValueError</span>	Traceback (most recent call last)
+<span class="green">&lt;ipython-input-4-cc668a130244&gt;</span> in &lt;module&gt;()
+<span class="green">----> 1 raise</span> ValueError('cannot parse number')
+
+<span class="red">ValueError</span>: cannot parse number
+								</pre>
+							</li>
+							<li>
+								<pre><code class="hljs">n = read()
+if isNumber(n):
+	number = stringToNumber(n)
+	print(number + 1)
+else:
+	print("not a number")</code></pre>
+							</li>
+						</ol>
+					</section>
+					<section>
+						<ol>
+							<li>
+								<pre>
+<span class="red">ValueError</span>	Traceback (most recent call last)
+<span class="green">&lt;ipython-input-4-cc668a130244&gt;</span> in &lt;module&gt;()
+<span class="green">----> 1 raise</span> ValueError('cannot parse number')
+
+<span class="red">ValueError</span>: cannot parse number
+								</pre>
+							</li>
+							<li>
+								<pre><code class="hljs">n = read()
+if isNumber(n):
+	number = stringToNumber(n)
+	print(number + 1)
+else:
+	print("not a number")</code></pre>
+							</li>
+							<li>
+								<pre><code class="hljs">n = read()
+answer = stringToNumber(n)
+if answer.error:
+	print("not a number")
+else:
+	print(answer.number + 1)</code></pre>
+							</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox2.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/03_inbox3.png">
+					</section>
+				</section>
 			</div>
 		</div>
 
