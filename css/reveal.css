@@ -1634,3 +1634,7 @@ body {
   box-shadow: none;
   background: none;
 }
+
+.reveal section .maxImg {
+  max-height: 300px;
+}
