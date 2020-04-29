@@ -32,6 +32,9 @@
 					<img class="s1_leftUp" src="./images/01_cat.jpg">
 					<img class="s1_rightDown" src="./images/01_cat2.jpg">
 				</section>
+				<section>
+					<img src="./images/01_dog.jpg" height="400">
+				</section>
 				<!-- <section>
 					<section>
 						<h4>Планы на недалекое будущее</h4>
@@ -63,7 +66,7 @@
 						<pre><code class="hljs">stringToNumber("4") = 4</code></pre>
 					</section>
 					<section>
-						<pre><code class="hljs">n = read()
+						<pre><code class="hljs">n = input()
 number = stringToNumber(n)
 print(8 / number)</code></pre>
 						<pre><span class="red">user:</span><span class="blue">console$</span> 4
@@ -71,7 +74,7 @@ print(8 / number)</code></pre>
 <span class="red">user:</span><span class="blue">console$</span></pre>
 					</section>
 					<section>
-						<pre><code class="hljs">n = read()
+						<pre><code class="hljs">n = input()
 number = stringToNumber(n)
 print(8 / number)</code></pre>
 						<span>problems?</span>
@@ -89,6 +92,17 @@ print(8 / number)</code></pre>
 ???
 <span class="red">user:</span><span class="blue">console$</span></pre>
 						<img class="maxImg" src="./images/02_wat.jpg">
+					</section>
+					<section>
+						<pre><code class="hljs">n = input()
+number = stringToNumber(n)
+print(8 / number)</code></pre>
+						<pre><span class="red">user:</span><span class="blue">console$</span> dfjkls
+???
+<span class="red">user:</span><span class="blue">console$</span></pre>
+						<pre><span class="red">user:</span><span class="blue">console$</span> 0
+???
+<span class="red">user:</span><span class="blue">console$</span></pre>
 					</section>
 				</section>
 				<section>
@@ -118,10 +132,10 @@ print(8 / number)</code></pre>
 <!-- 							</li>
 						</ol> -->
 						<pre><code class="hljs">try:
-	n = read()
+	n = input()
 	number = stringToNumber(n)	
 	print(8 / number)
-except:
+except Exception:
 	print("not a number")</code></pre>
 					</section>
 					<section>
@@ -137,12 +151,12 @@ except:
 <!-- 							</li>
 						</ol> -->
 						<pre><code class="hljs">try:
-	n = read()
+	n = input()
 	number = stringToNumber(n)	
 	print(8 / number)
-except ValueError as e:
+except ValueError:
 	print("not a number")
-except ZeroDivisionError as e:
+except ZeroDivisionError:
 	print("cannot divide by zero")</code></pre>
 					</section>
 					<section>
@@ -158,15 +172,33 @@ except ZeroDivisionError as e:
 <!-- 							</li>
 						</ol> -->
 						<pre><code class="hljs">try:
-	n = read()
+	n = input()
 	number = stringToNumber(n)
 
 	if number != 0:	
 		print(8 / number)
 	else:
 		print("cannot divide by zero")
-except ValueError as e:
+except ValueError:
 	print("not a number")</code></pre>
+					</section>
+					<section>
+						<pre><code class="hljs">try:
+	n = input()
+	number = stringToNumber(n)
+
+	if number != 0:	
+		print(8 / number)
+	else:
+		print("cannot divide by zero")
+except ValueError:
+	print("not a number")</code></pre>
+					<ol>
+						<li>Получение неожидаемой ошибку</li>
+						<li>Усложнение читаемости и поддержки кода</li>
+						<li>Обработка ошибки разными способами</li>
+						<li>Проблемы с производительностью в некоторых случаях</li>
+					</ol>
 					</section>
 					<!-- <section>
 						<ol start="2">
@@ -241,10 +273,13 @@ print(answer.number)</code></pre>
 						<img class="inboxImg" src="./images/03_inbox7.png">
 					</section>
 					<section>
-						<ol>
-							<li><img class="inboxImg" src="./images/03_inbox6.png"></li>
-							<li><img class="inboxImg" src="./images/03_inbox8.png"></li>
-						</ol>
+						<dl>
+							<dt>return</dt>
+							<dd><img height="100px" class="inboxImg" src="./images/03_inbox6.png"></dd>
+							<dt>bind</dt>
+							<dd><img height="100px" class="inboxImg" src="./images/03_inbox11.png"></dd>
+							<dd><img height="250px" class="inboxImg" src="./images/03_inbox8.png"></dd>						
+						</dl>
 					</section>
 					<section>
 						<img class="inboxImg" src="./images/03_inbox9.png">
@@ -292,6 +327,26 @@ print(answer.number)</code></pre>
 						<img class="inboxImg" src="./images/04_inbox10.png">
 					</section>
 				</section>
+				<section>
+					<span>Цепочка составленная из монад позволяет:</span>
+					<ol>
+						<li>Не забыть обработать ошибку</li>
+						<li>Писать более линейный, читаемый и простой код</li>
+						<li>Повысить производительность в некоторых случаях</li>
+					</ol>
+				</section>
+				<section>
+					<ul>
+						<li>
+							<span>Крутой курс по хаскелю от computer science center</span>
+							<a>https://stepik.org/course/75/promo</a>
+						</li>
+						<li>
+							<span>Подробная статья на тему обработки ошибок</span>
+							<a>http://joeduffyblog.com/2016/02/07/the-error-model/</a>
+						</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
@@ -308,7 +363,11 @@ print(answer.number)</code></pre>
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/highlight/highlight.js' },
 					{ src: 'plugin/notes/notes.js', async: true }
-				]
+				],
+				transition: 'none',
+				slideNumber: 'h/v',
+				showSlideNumber: 'all',
+				slideNumber: true
 			});
 		</script>
 	</body>

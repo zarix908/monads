@@ -447,13 +447,12 @@ body {
   position: absolute;
   display: block;
   right: 8px;
-  bottom: 8px;
+  top: 8px;
   z-index: 31;
   font-family: Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 50px;
   line-height: 1;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
   padding: 5px; }
 
 .reveal .slide-number a {
