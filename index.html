@@ -32,7 +32,7 @@
 					<img class="s1_leftUp" src="./images/01_cat.jpg">
 					<img class="s1_rightDown" src="./images/01_cat2.jpg">
 				</section>
-				<section>
+				<!-- <section>
 					<section>
 						<h4>Планы на недалекое будущее</h4>
 					</section>
@@ -57,7 +57,7 @@
 							<li>Чем мне помогут монады?</li>
 						</ol>
 					</section>
-				</section>
+				</section> -->
 				<section>
 					<section>
 						<pre><code class="hljs">stringToNumber("4") = 4</code></pre>
@@ -93,8 +93,8 @@ print(8 / number)</code></pre>
 				</section>
 				<section>
 					<section>
-						<ol>
-							<li>
+<!-- 						<ol>
+							<li> -->
 								<pre>
 <span class="red">ValueError</span>	Traceback (most recent call last)
 <span class="green">&lt;ipython-input-4-cc668a130244&gt;</span> in &lt;module&gt;()
@@ -102,12 +102,12 @@ print(8 / number)</code></pre>
 
 <span class="red">ValueError</span>: cannot parse number
 								</pre>
-							</li>
-						</ol>
+<!-- 							</li>
+						</ol> -->
 					</section>
 					<section>
-						<ol>
-							<li>
+<!-- 						<ol>
+							<li> -->
 								<pre>
 <span class="red">ValueError</span>	Traceback (most recent call last)
 <span class="green">&lt;ipython-input-4-cc668a130244&gt;</span> in &lt;module&gt;()
@@ -115,8 +115,8 @@ print(8 / number)</code></pre>
 
 <span class="red">ValueError</span>: cannot parse number
 								</pre>
-							</li>
-						</ol>
+<!-- 							</li>
+						</ol> -->
 						<pre><code class="hljs">try:
 	n = read()
 	number = stringToNumber(n)	
@@ -125,8 +125,8 @@ except:
 	print("not a number")</code></pre>
 					</section>
 					<section>
-						<ol>
-							<li>
+<!-- 						<ol>
+							<li> -->
 								<pre>
 <span class="red">ValueError</span>	Traceback (most recent call last)
 <span class="green">&lt;ipython-input-4-cc668a130244&gt;</span> in &lt;module&gt;()
@@ -134,8 +134,8 @@ except:
 
 <span class="red">ValueError</span>: cannot parse number
 								</pre>
-							</li>
-						</ol>
+<!-- 							</li>
+						</ol> -->
 						<pre><code class="hljs">try:
 	n = read()
 	number = stringToNumber(n)	
@@ -146,41 +146,42 @@ except ZeroDivisionError as e:
 	print("cannot divide by zero")</code></pre>
 					</section>
 					<section>
-						<ol start="2">
-							<li>
-								<pre><code class="hljs disScroll">n = read()
-if isNumber(n):
-	number = stringToNumber(n)	
-	print(8 / number)
-else:
-	print("not a number")</code></pre>
-							</li>
-						</ol>
-					</section>
-					<section>
-						<ol start="2">
-							<li>
-								<pre><code class="hljs disScroll">n = read()
-if isNumber(n):
-	number = stringToNumber(n)	
-	print(8 / number)
-else:
-	print("not a number")</code></pre>
-							</li>
-						</ol>
-						<pre><code class="hljs disScroll">n = read()
-if isNumber(n):
-	number = stringToNumber(n)	
+<!-- 						<ol>
+							<li> -->
+								<pre>
+<span class="red">ValueError</span>	Traceback (most recent call last)
+<span class="green">&lt;ipython-input-4-cc668a130244&gt;</span> in &lt;module&gt;()
+<span class="green">----> 1 raise</span> ValueError('cannot parse number')
 
-	if number == 0:
-		print("cannot divide by zero")
-	else:
+<span class="red">ValueError</span>: cannot parse number
+								</pre>
+<!-- 							</li>
+						</ol> -->
+						<pre><code class="hljs">try:
+	n = read()
+	number = stringToNumber(n)
+
+	if number != 0:	
 		print(8 / number)
-else:
+	else:
+		print("cannot divide by zero")
+except ValueError as e:
 	print("not a number")</code></pre>
 					</section>
+					<!-- <section>
+						<ol start="2">
+							<li>
+								<pre><code class="hljs disScroll">n = read()
+if isNumber(n):
+	number = stringToNumber(n)	
+	print(8 / number)
+else:
+	print("not a number")</code></pre>
+							</li>
+						</ol>
+					</section>
 					<section>
-						<ol start="3">
+						<ol start="2">
 							<li>
 								<pre><code class="hljs disScroll">n = read()
 answer = stringToNumber(n)	
@@ -212,7 +213,10 @@ if answer.error:
 	print("cannot divide by zero")
 	exit()
 print(answer.number)</code></pre>
-					</section>
+					</section> -->
+				</section>
+				<section>
+					<h5>Устройство монад</h5>
 				</section>
 				<section>
 					<section>
@@ -250,6 +254,42 @@ print(answer.number)</code></pre>
 					</section>
 					<section>
 						<img class="inboxImg" src="./images/03_inbox7.png">
+					</section>
+				</section>
+				<section>
+					<h5>Использование монад</h5>
+				</section>
+				<section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox.png">
+						<img class="inboxImg" src="./images/04_inbox2.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox3.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox4.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox5.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox6.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox7.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox8.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox9.png">
+					</section>
+					<section>
+						<img class="inboxImg" src="./images/04_inbox10.png">
 					</section>
 				</section>
 			</div>
